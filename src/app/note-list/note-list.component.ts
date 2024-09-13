@@ -23,7 +23,7 @@ export class NoteListComponent {
   }
 
   getList(): Note[] {
-    if (this.status === 'notes') {
+    if (this.status == 'notes') {
       return this.noteService.normalNotes;
     } else {
       return this.noteService.trashNotes;
